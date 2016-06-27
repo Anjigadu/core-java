@@ -13,6 +13,14 @@ public class Palindrome {
 		}
 	}
 
+	/**
+	 * Recursive approach
+	 * 
+	 * @param ch
+	 * @param start
+	 * @param end
+	 * @return
+	 */
 	public boolean palindrome(char[] ch, int start, int end) {
 		if (start < end) {
 			if (ch[start] != ch[end]) {
@@ -24,6 +32,12 @@ public class Palindrome {
 		return palindrome(ch, ++start, --end);
 	}
 
+	/**
+	 * Iterative approach
+	 * 
+	 * @param str
+	 * @return
+	 */
 	public boolean isPalindrome(String str) {
 		if (str.length() % 2 != 1) {
 			return false;
