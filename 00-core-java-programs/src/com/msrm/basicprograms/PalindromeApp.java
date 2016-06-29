@@ -1,12 +1,12 @@
 package com.msrm.basicprograms;
 
-public class Palindrome {
+public class PalindromeApp {
 
 	public static void main(String[] args) {
 		String str = "MADAM";
-		Palindrome p = new Palindrome();
-		if (p.isPalindrome(str)) {
-			// if (p.palindrome(str.toCharArray(), 0, str.length() - 1)) {
+		PalindromeApp app = new PalindromeApp();
+		if (app.isPalindrome(str)) {
+			// if (app.palindrome(str.toCharArray(), 0, str.length() - 1)) {
 			System.out.println(str + " is Palindrome");
 		} else {
 			System.out.println(str + " not is Palindrome");
