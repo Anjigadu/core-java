@@ -9,6 +9,9 @@ public class FactorialApp {
 		int result = app.computeFactorial(number);
 
 		System.out.printf("Factorial of %d is %d%n", number, result);
+		
+		result = app.factorial(number);
+		System.out.printf("Factorial of %d is %d%n", number, result);
 	}
 
 	/**
