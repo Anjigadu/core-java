@@ -8,15 +8,15 @@ public class StopWatch {
 	}
 
 	public static void start() {
-		start = System.nanoTime();
+		start = System.currentTimeMillis();
 	}
 
 	public static void stop() {
-		long time = (System.nanoTime() - start);
+		long time = (System.currentTimeMillis() - start);
 		start = 0;
-		float milliSecond = time / (1000f * 1000);
-		float second = time / (1000f * 1000 * 60);
-		float minute = time / (1000f * 1000 * 60 * 60);
+		float milliSecond = time / (1000f);
+		float second = time / (1000f * 60);
+		float minute = time / (1000f * 60 * 60);
 		System.out.println(String.format("Time elapsed: %3.2fms | %3.2fs | %3.2fm", milliSecond, second, minute));
 	}
 

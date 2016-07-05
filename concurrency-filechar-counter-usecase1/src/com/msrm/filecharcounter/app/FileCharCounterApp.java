@@ -19,8 +19,8 @@ public class FileCharCounterApp {
 		int i = 0;
 		do {
 			Thread t = new Thread(new Task(list, i, i + fileCount));
-			// t.start();
-			t.run();
+			t.start();
+			// t.run();
 
 			System.out.println(i + ": " + (i + fileCount) + ", Thread:" + t.getName());
 
@@ -28,8 +28,8 @@ public class FileCharCounterApp {
 			if ((next) >= list.size()) {
 
 				Thread t1 = new Thread(new Task(list, i + 1 + fileCount, list.size() - 1));
-				// t1.start();
-				t1.run();
+				t1.start();
+				// t1.run();
 
 				System.out.println(i + 1 + fileCount + ": " + (list.size() - 1) + ", Thread:" + t1.getName());
 

@@ -12,7 +12,7 @@ public class CharacterCounter {
 		this.file = file;
 	}
 
-	public void execute() {
+	public int execute() {
 		int count = 0;
 		try (FileInputStream fis = new FileInputStream(file)) {
 			while (fis.read() != -1)
@@ -20,7 +20,8 @@ public class CharacterCounter {
 		} catch (IOException e) {
 			System.out.println("FileNotFound: " + e.getMessage());
 		}
-//		System.out.println(file + " : " + count);
+		// System.out.println(file + " : " + count);
+		return count;
 	}
 
 }
