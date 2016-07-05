@@ -15,28 +15,31 @@ public class FileCharCounterApp {
 		FileLoader fl = new FileLoader("/home/sriram/test");
 		List<File> list = fl.list();
 
-		int fileCount = 500;
-
+		int fileCount = 499;
 		int i = 0;
 		do {
-			Thread t = new Thread(new Task(list, i, i + fileCount - 1));
+			Thread t = new Thread(new Task(list, i, i + fileCount));
 			// t.start();
-			// t.run();
+			t.run();
 
-			// 0 - 2141
-			// 0 - 499
-			// 500 - 999
-			// 1000 - 1499
-			// 1500 - 1999
-			// 2000 - 2141
+			System.out.println(i + ": " + (i + fileCount) + ", Thread:" + t.getName());
 
-			System.out.println(i + ": " + (i + fileCount - 1));
-			
-			i += fileCount + 1;
+			int next = i + 2 * fileCount;
+			if ((next) >= list.size()) {
 
-			
+				Thread t1 = new Thread(new Task(list, i + 1 + fileCount, list.size() - 1));
+				// t1.start();
+				t1.run();
 
-		} while (i < list.size());
+				System.out.println(i + 1 + fileCount + ": " + (list.size() - 1) + ", Thread:" + t1.getName());
+
+				break;
+
+			} else {
+				i += fileCount + 1;
+			}
+
+		} while (true);
 
 		System.out.println("No of files processed : " + list.size());
 

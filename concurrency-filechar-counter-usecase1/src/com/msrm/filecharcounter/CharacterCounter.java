@@ -20,7 +20,7 @@ public class CharacterCounter {
 		} catch (IOException e) {
 			System.out.println("FileNotFound: " + e.getMessage());
 		}
-		System.out.println(file + " : " + count);
+//		System.out.println(file + " : " + count);
 	}
 
 }
