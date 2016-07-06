@@ -1,5 +1,13 @@
 package com.msrm.handson.algorithms;
 
+/**
+ * Split the given number based on the count provided as input. For instance,
+ * You have 76 items to be processed in a system, system can't take all items in
+ * a sort. So need to be split item's and passed.
+ * 
+ * @author Sriram
+ *
+ */
 public class Range {
 
 	public static void main(String[] args) {
