@@ -1,4 +1,4 @@
-package com.msrm.handson.techgig.algorithms;
+package com.msrm.techgig.pgm.qa;
 
 /**
  * <h3>Retail Problem</h3>
