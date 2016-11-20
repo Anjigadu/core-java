@@ -1,6 +1,6 @@
 package com.msrm.techgig.pgm.qa;
 
-public class SqureRoot {
+public class SquareRoot {
 
 	public static void main(String[] args) {
 		double result = sqrt(Double.parseDouble(args[0]));
