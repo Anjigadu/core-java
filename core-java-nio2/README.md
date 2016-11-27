@@ -54,7 +54,7 @@ when the buffer is full.
 	- java.io.DataOutputStream
 	- java.io.EOFException used while reading from DataStreams
 * ObjectStreams
-	- Manipulates Java Objects in IO
+	- Manipulates Java objects and primitive data in IO
 	- java.io.ObjectInputStream
 	- java.io.ObjectOutputStream
 	- Serialization/Deserialization
