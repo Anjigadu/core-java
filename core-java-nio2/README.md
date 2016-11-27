@@ -59,11 +59,18 @@ when the buffer is full.
 	- java.io.ObjectOutputStream
 	- Serialization/Deserialization
 
+
 ## Efficient IO
 * Buffered processing
 * closing IO - try-with-resource
 
-
+## Path - Jdk 7
+* It represent File or Directory in OS
+* Will not throw if the Path doesn't exist
+	- Creating path
+	`Path p1 = Paths.get("/tmp/foo");
+	Path p2 = Paths.get(args[0]);
+	Path p3 = Paths.get(URI.create("file:///Users/joe/FileTest.java"));`
 
 
 
