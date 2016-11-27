@@ -35,9 +35,7 @@
 
 ## What buffer?
 * temporary small junk of memory block which holds data
-* program -> buffer -> disk (write)
-* in reading buffer, native API call trigger only when  
-* writing buffer, stops when it's full
+* program -> buffer -> disk
 * Buffered input streams read data from a memory area known as a buffer; the native input API 
 is called only when the buffer is empty
 * Buffered output streams write data to a buffer, and the native output API is called only 
@@ -49,7 +47,17 @@ when the buffer is full.
 * This is known as flushing the buffer. 
 
 
-
+## DataStreams vs ObjectStreams
+* DataStreams
+	- Manipulates primitive data in IO
+	- java.io.DataInputStream
+	- java.io.DataOutputStream
+	- java.io.EOFException used while reading from DataStreams
+* ObjectStreams
+	- Manipulates Java Objects in IO
+	- java.io.ObjectInputStream
+	- java.io.ObjectOutputStream
+	- Serialization/Deserialization
 
 ## Efficient IO
 * Buffered processing
