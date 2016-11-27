@@ -68,9 +68,9 @@ when the buffer is full.
 * It represent File or Directory in OS
 * Will not throw if the Path doesn't exist
 	- Creating path
-	`Path p1 = Paths.get("/tmp/foo");
-	Path p2 = Paths.get(args[0]);
-	Path p3 = Paths.get(URI.create("file:///Users/joe/FileTest.java"));`
+		`Path p1 = Paths.get("/tmp/foo");
+		Path p2 = Paths.get(args[0]);
+		Path p3 = Paths.get(URI.create("file:///Users/joe/FileTest.java"));`
 
 
 
