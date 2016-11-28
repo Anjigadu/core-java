@@ -97,10 +97,11 @@ Path p3 = Paths.get(URI.create("file:///Users/joe/FileTest.java"));
 Path p4 = FileSystems.getDefault().getPath("/users/sally");  
 Path p5 = Paths.get(System.getProperty("user.home"),"logs", "foo.log");  
 ``
+
 	- Retrieving Information about a Path
 
 ``
-// None of these methods requires that the file corresponding  
+\/\/ None of these methods requires that the file corresponding  
 // to the Path exists.  
 // Microsoft Windows syntax  
 Path path = Paths.get("C:\\home\\joe\\foo");  
