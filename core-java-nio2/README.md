@@ -55,6 +55,19 @@ remains closed. Once a channel is closed, any attempt to invoke an I/O operation
 cause a ClosedChannelException to be thrown. Whether or not a channel is open may be tested by  
 invoking its isOpen method.
 
+
+## SeekableByteChannel 
+* java.nio.channels.SeekableByteChannel
+  - enable you to set or query the position, and you can then read the data from, or write the    
+  data to, that location  
+  - Methods --> 
+    + position – Returns the channel's current position
+	+ position(long) – Sets the channel's position
+	+ read(ByteBuffer) – Reads bytes into the buffer from the channel
+	+ write(ByteBuffer) – Writes bytes from the buffer to the channel
+	+ truncate(long) – Truncates the file (or other entity) connected to the channel
+ 
+ 
 ## DataStreams vs ObjectStreams
 * DataStreams
 	- Manipulates primitive data in IO
@@ -77,16 +90,16 @@ invoking its isOpen method.
 * Will not throw exception if the Path doesn't exist
 	- Creating path
 	<pre>
-```
+``
 Path p1 = Paths.get("/tmp/foo");
 Path p2 = Paths.get(args[0]);
 Path p3 = Paths.get(URI.create("file:///Users/joe/FileTest.java"));
 Path p4 = FileSystems.getDefault().getPath("/users/sally");
-Path p5 = Paths.get(System.getProperty("user.home"),"logs", "foo.log");```
+Path p5 = Paths.get(System.getProperty("user.home"),"logs", "foo.log");``
 </pre>
 	- Retrieving Information about a Path
 <pre>
-```
+``
 // None of these methods requires that the file corresponding
 // to the Path exists.
 // Microsoft Windows syntax
@@ -102,30 +115,30 @@ System.out.format("getNameCount: %d%n", path.getNameCount());
 System.out.format("subpath(0,2): %s%n", path.subpath(0,2));
 System.out.format("getParent: %s%n", path.getParent());
 System.out.format("getRoot: %s%n", path.getRoot());
-```
+``
 </pre>
 	- Removing Redundancies From a Path
 <pre>
 1. toUri()
-```
+``
 Path p1 = Paths.get("/home/logfile");
 // Result is file:///home/logfile
 System.out.format("%s%n", p1.toUri());
-```
+``
 
 2. toAbsolutePath()
-```
+``
 Path inputPath = Paths.get("sri/project");
 
 // Returns somethink like /home/sri/project
 Path fullPath = inputPath.toAbsolutePath();
-```
+``
 Note: The toAbsolutePath method converts the user input and returns a Path 
 that returns useful values when queried. The file does not need to exist 
 for this method to work
 
 3. toRealPath()
-```
+``
 try {
     Path fp = path.toRealPath();
 } catch (NoSuchFileException x) {
@@ -135,7 +148,7 @@ try {
     System.err.format("%s%n", x);
     // Logic for other sort of file error.
 }
-```
+``
 </pre>
 
 
