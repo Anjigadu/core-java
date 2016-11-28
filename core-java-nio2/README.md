@@ -89,16 +89,14 @@ invoking its isOpen method.
 * It represent File or Directory in OS
 * Will not throw exception if the Path doesn't exist
 	- Creating path
-	<pre>
 ``
 Path p1 = Paths.get("/tmp/foo");
 Path p2 = Paths.get(args[0]);
 Path p3 = Paths.get(URI.create("file:///Users/joe/FileTest.java"));
 Path p4 = FileSystems.getDefault().getPath("/users/sally");
-Path p5 = Paths.get(System.getProperty("user.home"),"logs", "foo.log");``
-</pre>
+Path p5 = Paths.get(System.getProperty("user.home"),"logs", "foo.log");
+``
 	- Retrieving Information about a Path
-<pre>
 ``
 // None of these methods requires that the file corresponding
 // to the Path exists.
@@ -116,9 +114,7 @@ System.out.format("subpath(0,2): %s%n", path.subpath(0,2));
 System.out.format("getParent: %s%n", path.getParent());
 System.out.format("getRoot: %s%n", path.getRoot());
 ``
-</pre>
 	- Removing Redundancies From a Path
-<pre>
 1. toUri()
 ``
 Path p1 = Paths.get("/home/logfile");
@@ -133,9 +129,9 @@ Path inputPath = Paths.get("sri/project");
 // Returns somethink like /home/sri/project
 Path fullPath = inputPath.toAbsolutePath();
 ``
-Note: The toAbsolutePath method converts the user input and returns a Path 
-that returns useful values when queried. The file does not need to exist 
-for this method to work
+Note: The toAbsolutePath method converts the user input and returns a Path   
+that returns useful values when queried. The file does not need to exist  
+for this method to work  
 
 3. toRealPath()
 ``
@@ -149,7 +145,6 @@ try {
     // Logic for other sort of file error.
 }
 ``
-</pre>
 
 
 ## Read, Write using Files
