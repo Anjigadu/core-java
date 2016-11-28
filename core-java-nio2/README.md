@@ -96,61 +96,55 @@ Path p3 = Paths.get(URI.create("file:///Users/joe/FileTest.java"));
 Path p4 = FileSystems.getDefault().getPath("/users/sally");
 Path p5 = Paths.get(System.getProperty("user.home"),"logs", "foo.log");
 ```
-
 	- Retrieving Information about a Path
+```java
+// None of these methods requires that the file corresponding
+// to the Path exists.
+// Microsoft Windows syntax
+Path path = Paths.get("C:\\home\\joe\\foo");
 
-``
-// None of these methods requires that the file corresponding  
-// to the Path exists.  
-// Microsoft Windows syntax  
-Path path = Paths.get("C:\\home\\joe\\foo");  
-  
-// Solaris syntax  
-Path path = Paths.get("/home/joe/foo");  
-  
-System.out.format("toString: %s%n", path.toString());  
-System.out.format("getFileName: %s%n", path.getFileName());  
-System.out.format("getName(0): %s%n", path.getName(0));  
-System.out.format("getNameCount: %d%n", path.getNameCount());  
-System.out.format("subpath(0,2): %s%n", path.subpath(0,2));  
-System.out.format("getParent: %s%n", path.getParent());  
-System.out.format("getRoot: %s%n", path.getRoot());  
-``
+// Solaris syntax
+Path path = Paths.get("/home/joe/foo");
 
+System.out.format("toString: %s%n", path.toString());
+System.out.format("getFileName: %s%n", path.getFileName());
+System.out.format("getName(0): %s%n", path.getName(0));
+System.out.format("getNameCount: %d%n", path.getNameCount());
+System.out.format("subpath(0,2): %s%n", path.subpath(0,2));
+System.out.format("getParent: %s%n", path.getParent());
+System.out.format("getRoot: %s%n", path.getRoot());
+```
 	- Removing Redundancies From a Path
 1. toUri()
-
-``
-Path p1 = Paths.get("/home/logfile");  
-// Result is file:///home/logfile  
-System.out.format("%s%n", p1.toUri());  
-``
+```java
+Path p1 = Paths.get("/home/logfile");
+// Result is file:///home/logfile
+System.out.format("%s%n", p1.toUri());
+```
 
 2. toAbsolutePath()
+```java
+Path inputPath = Paths.get("sri/project");
 
-``
-Path inputPath = Paths.get("sri/project");  
-
-// Returns somethink like /home/sri/project  
-Path fullPath = inputPath.toAbsolutePath();  
-``
+// Returns somethink like /home/sri/project
+Path fullPath = inputPath.toAbsolutePath();
+```
 Note: The toAbsolutePath method converts the user input and returns a Path   
 that returns useful values when queried. The file does not need to exist  
 for this method to work  
 
 3. toRealPath()
-
-``
-try {  
-    Path fp = path.toRealPath();  
-} catch (NoSuchFileException x) {  
-    System.err.format("%s: no such" + " file or directory%n", path);  
-    // Logic for case when file doesn't exist.  
-} catch (IOException x) {  
-    System.err.format("%s%n", x);  
-    // Logic for other sort of file error.  
-}  
-``
+```java
+try {
+    Path fp = path.toRealPath();
+} catch (NoSuchFileException x) {
+    System.err.format("%s: no such" + " file or directory%n", path);
+    // Logic for case when file doesn't exist.
+} catch (IOException x) {
+    System.err.format("%s%n", x);
+    // Logic for other sort of file error.
+}
+```
 
 
 ## Read, Write using Files
