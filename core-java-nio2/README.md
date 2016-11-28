@@ -61,11 +61,11 @@ invoking its isOpen method.
   - enable you to set or query the position, and you can then read the data from, or write the    
   data to, that location  
   - Methods --> 
-    + position – Returns the channel's current position
-	+ position(long) – Sets the channel's position
-	+ read(ByteBuffer) – Reads bytes into the buffer from the channel
-	+ write(ByteBuffer) – Writes bytes from the buffer to the channel
-	+ truncate(long) – Truncates the file (or other entity) connected to the channel
+    + `position` Returns the channel's current position
+	+ `position(long)` Sets the channel's position
+	+ `read(ByteBuffer)` Reads bytes into the buffer from the channel
+	+ `write(ByteBuffer)` Writes bytes from the buffer to the channel
+	+ `truncate(long)` Truncates the file (or other entity) connected to the channel
  
  
 ## DataStreams vs ObjectStreams
@@ -89,19 +89,18 @@ invoking its isOpen method.
 * It represent File or Directory in OS
 * Will not throw exception if the Path doesn't exist
 	- Creating path
-
-``
-Path p1 = Paths.get("/tmp/foo");  
-Path p2 = Paths.get(args[0]);  
-Path p3 = Paths.get(URI.create("file:///Users/joe/FileTest.java"));  
-Path p4 = FileSystems.getDefault().getPath("/users/sally");  
-Path p5 = Paths.get(System.getProperty("user.home"),"logs", "foo.log");  
-``
+```java
+Path p1 = Paths.get("/tmp/foo");
+Path p2 = Paths.get(args[0]);
+Path p3 = Paths.get(URI.create("file:///Users/joe/FileTest.java"));
+Path p4 = FileSystems.getDefault().getPath("/users/sally");
+Path p5 = Paths.get(System.getProperty("user.home"),"logs", "foo.log");
+```
 
 	- Retrieving Information about a Path
 
 ``
-\/\/ None of these methods requires that the file corresponding  
+// None of these methods requires that the file corresponding  
 // to the Path exists.  
 // Microsoft Windows syntax  
 Path path = Paths.get("C:\\home\\joe\\foo");  
