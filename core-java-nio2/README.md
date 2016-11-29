@@ -185,4 +185,10 @@ limit |                        |
      position              capacity  
 ```
 
+Invariants  
+The following invariant holds for the mark, position, limit, and capacity values:  
+```
+0 <= mark <= position <= limit <= capacity
+```
+
 
