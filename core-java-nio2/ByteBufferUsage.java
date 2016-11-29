@@ -18,9 +18,6 @@ public class ByteBufferUsage {
 		// marked flag discarded
 		buf.flip();
 
-		// setting limit range
-		buf.limit(8);
-
 		// Read char by char
 		System.out.println("\nReading char by char");
 		while(buf.hasRemaining()) {
