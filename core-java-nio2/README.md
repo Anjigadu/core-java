@@ -68,6 +68,15 @@ invoking its isOpen method.
 	+ `truncate(long)` Truncates the file (or other entity) connected to the channel
  
  
+## FileChannel
+* java.nio.channels.FileChannel
+  - gives advanced feature on File object manipulation
+    + Mapping a region of file directly into memory for faster access
+	+ Locking a region of file
+	+ Reading and Writing from bytes from an absolute location without affecting channels' 
+	current position
+
+
 ## DataStreams vs ObjectStreams
 * DataStreams
 	- Manipulates primitive data in IO
@@ -115,13 +124,13 @@ System.out.format("getParent: %s%n", path.getParent());
 System.out.format("getRoot: %s%n", path.getRoot());
 ```
 * Removing Redundancies From a Path
-1. toUri()
+__toUri()__
 ```java
 Path p1 = Paths.get("/home/logfile");
 // Result is file:///home/logfile
 System.out.format("%s%n", p1.toUri());
 ```
-2. toAbsolutePath()
+__toAbsolutePath()__
 ```java
 Path inputPath = Paths.get("sri/project");
 
@@ -131,7 +140,7 @@ Path fullPath = inputPath.toAbsolutePath();
 Note: The toAbsolutePath method converts the user input and returns a Path   
 that returns useful values when queried. The file does not need to exist  
 for this method to work  
-3. toRealPath()
+__toRealPath()__
 ```java
 try {
     Path fp = path.toRealPath();
@@ -156,6 +165,22 @@ try {
 4. for Channel access
  * Files.newByteChannel(path, option) :: java.nio.channels.SeekableByteChannel
 
+
+## java.nio.Buffer
+* A buffer's capacity is the number of elements it contains.
+The capacity of a buffer is never negative and never changes.
+* A buffer's limit is the index of the first element that should not 
+be read or written. A buffer's limit is never negative and is never greater 
+than its capacity.
+* A buffer's position is the index of the next element to be read or written. 
+A buffer's position is never negative and is never greater than its limit.
+Example:-
++---+---+---+---+---+---+---+---+  
+| 2 | 9 | 8 | 7 | 3 | 0 | 1 | 5 |  
++---+---+---+---+---+---+---+---+  
+  |   |                        |  
+limit |                        |  
+     position              capacity  
 
 
 
