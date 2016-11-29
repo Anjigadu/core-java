@@ -18,13 +18,16 @@ public class ByteBufferUsage {
 		// marked flag discarded
 		buf.flip();
 
+		// setting limit range
+		buf.limit(8);
+
 		// Read char by char
 		System.out.println("\nReading char by char");
 		while(buf.hasRemaining()) {
-			System.out.print((char)buf.get());
+			printInfo(buf);
 		}
 
-		buf.flip();
+		buf.clear();
 
 		System.out.println("\nBulk reading");
 		int size = buf.capacity();
@@ -32,5 +35,10 @@ public class ByteBufferUsage {
 		buf.get(buffer);
 		System.out.println(new String(buffer));
 		System.out.println();
+	}
+
+	public static void printInfo(ByteBuffer buf) {
+		System.out.format("position=%d, limit=%d, capacity=%d, data=%s%n", buf.position(), 
+			buf.limit(), buf.capacity(), (char) buf.get());
 	}
 }

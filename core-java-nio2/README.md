@@ -174,15 +174,17 @@ The capacity of a buffer is never negative and never changes.
 be read or written. A buffer's limit is never negative and is never greater 
 than its capacity.
 * A buffer's position is the index of the next element to be read or written. 
-A buffer's position is never negative and is never greater than its limit.
-Example:-  
+A buffer's position is never negative and is never greater than its limit.  
+Example:-  position=0, limit=5, capacity = 8, buffer can be read from 0 till 5th  
+index even though capacity is 8. Due to limit range  
 ```
+  0   1   2   3   4   5   6   7
 +---+---+---+---+---+---+---+---+  
 | 2 | 9 | 8 | 7 | 3 | 0 | 1 | 5 |  
 +---+---+---+---+---+---+---+---+  
-  |   |                        |  
-limit |                        |  
-     position              capacity  
+  |                   |       |  
+position              |       |  
+                    limit  lastIndex + 1 = capacity  
 ```
 
 Invariants  
