@@ -123,7 +123,8 @@ System.out.format("subpath(0,2): %s%n", path.subpath(0,2));
 System.out.format("getParent: %s%n", path.getParent());
 System.out.format("getRoot: %s%n", path.getRoot());
 ```
-* Removing Redundancies From a Path
+* Removing redundancies from a Path
+
 __toUri()__
 ```java
 Path p1 = Paths.get("/home/logfile");
@@ -174,13 +175,14 @@ be read or written. A buffer's limit is never negative and is never greater
 than its capacity.
 * A buffer's position is the index of the next element to be read or written. 
 A buffer's position is never negative and is never greater than its limit.
-Example:-
+Example:-  
+```
 +---+---+---+---+---+---+---+---+  
 | 2 | 9 | 8 | 7 | 3 | 0 | 1 | 5 |  
 +---+---+---+---+---+---+---+---+  
   |   |                        |  
 limit |                        |  
      position              capacity  
-
+```
 
 
