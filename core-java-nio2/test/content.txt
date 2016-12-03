@@ -1,0 +1,1 @@
+Sample walkFileTree content file

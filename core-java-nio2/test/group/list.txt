@@ -1,0 +1,1 @@
+staff com.apple.sharepoint.group.1 access_bpf everyone localaccounts _appserverusr admin _appserveradm _lpadmin com.apple.sharepoint.group.2 _appstore _lpoperator _developer com.apple.access_ftp com.apple.access_screensharing com.apple.access_ssh

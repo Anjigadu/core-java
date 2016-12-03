@@ -1,0 +1,533 @@
+
+Summary
+=======
+           System Version:	16B2555
+               Total Time:	109:53:22
+
+Usage
+=====
+              Time on A/C:	04:58:39
+          Time on Battery:	88:20:35
+                Wake Time:	28:00:51
+              User Active:	25:29:44
+                User Idle:	02:31:06
+           Dark Wake Time:	00:00:45
+               Sleep Time:	65:17:40
+             Standby Time:	32:00:05
+
+
+Battery
+=======
+          Time on Battery:	88:20:35	-2.6 %/hr	-16113 mAh	-1460 mW
+                     Wake:	24:14:02	-8.2 %/hr	-14162 mAh	-4616 mW
+              User Active:	22:22:36	-8.6 %/hr	-13653 mAh	-4850 mW
+                User Idle:	01:51:26	-3.8 %/hr	 -509 mAh	-2593 mW
+                Dark Wake:	00:00:00	0.0 %/hr	    0 mAh	0 mW
+                    Sleep:	64:06:32	-0.4 %/hr	-1951 mAh	-247 mW
+                  Standby:	31:59:40	-0.2 %/hr	 -491 mAh	-119 mW
+
+
+CPU Summary
+===========
+           Avg. Frequency:	1.966 GHz
+           Package Power::	Pkg: 2.00W, CPU 1.15W, GPU: 0.07W
+       Pkg Interrupt Rate:	Total: 3805Hz   ARPT: 38Hz   HDEF: 1Hz   IGPU: 1267Hz   IPI: 1704Hz   MacBookAir7,2: 25Hz   SMC: 2Hz   TMR: 764Hz   XHC1: 3Hz
+          Pkg C-State Res:	Total: 68.7%   C2: 12%   C3: 4%   C6: 3%   C7: 50%   C8: 0%   C9: 0%   C10: 0%
+        Cores C-State Res:	   C3: 1%   C6: 0%   C7: 77%
+          GPU C-State Res:	   RC1: 2%   RC6: 95%
+            XCPM Tier Res:	   TT5: 0%   background: 2%   idle: 89%   normal: 8%   rt_short: 0%
+
+
+Thermal Summary
+===============
+            Total samples:	1788
+    Pressure Distribution:	nominal: 1735, moderate: 53
+    CPU TLVL Distribution:	[MIN,1): 1707, [1,26): 17, [26,51): 7, [51,101): 57, [101,151): 0, [151,201): 0, [201,MAX): 0
+    GPU TLVL Distribution:	[MIN,1): 1788, [1,26): 0, [26,51): 0, [51,101): 0, [101,151): 0, [151,201): 0, [201,MAX): 0
+    IO  TLVL Distribution:	[MIN,1): 1729, [1,26): 55, [26,51): 4, [51,101): 0, [101,151): 0, [151,201): 0, [201,MAX): 0
+
+
+Fan Summary
+===========
+            Total samples:	1785
+             High samples:	75
+        Very high samples:	156
+
+
+I/O Summary
+===========
+               Disk Reads:	1492543 (14/s)
+             Packets Sent:	1574475 (15/s)
+              Disk Writes:	916301 (9/s)
+           Bytes Received:	2.74 GB (27 KB/s)
+               Bytes Read:	55.81 GB (552 KB/s)
+               Bytes Sent:	169.9 MB (2 KB/s)
+            Bytes Written:	69.66 GB (689 KB/s)
+         Packets Received:	2558750 (24/s)
+
+Ranked I/O Activity
+===================
+                     Time:	2016-12-02 05:50:04 to 2016-12-02 06:00:04 (00:09:59)
+               Disk Reads:	85132 (142/s)
+             Packets Sent:	1260 (2/s)
+              Disk Writes:	22912 (38/s)
+           Bytes Received:	189 KB (323 bytes/s)
+               Bytes Read:	8.85 GB (15.1 MB/s)
+               Bytes Sent:	187 KB (320 bytes/s)
+            Bytes Written:	8.7 GB (14.8 MB/s)
+         Packets Received:	795 (1/s)
+                Breakdown:	                DISK READS                LOGICAL WRITES
+                	2.14 GB (122 MB/s)	2.07 GB (118.4 MB/s)	com.apple.DesktopServicesHelper
+                	82.7 MB (1.1 MB/s)	973 KB (14 KB/s)	org.videolan.vlc
+                	368 KB (628 bytes/s)	149.5 MB (255 KB/s)	com.apple.nsurlsessiond
+                	79.6 MB (136 KB/s)	1.7 MB (3 KB/s)	com.apple.quicklook
+                	722 KB (35 KB/s)	76 KB (4 KB/s)	com.apple.syncdefaultsd
+
+                     Time:	2016-11-30 01:09:16 to 2016-11-30 01:10:54 (00:01:37)
+               Disk Reads:	16194 (166/s)
+             Packets Sent:	2885 (30/s)
+              Disk Writes:	7217 (74/s)
+           Bytes Received:	1.4 MB (15 KB/s)
+               Bytes Read:	1.09 GB (11.5 MB/s)
+               Bytes Sent:	405 KB (4 KB/s)
+            Bytes Written:	1.35 GB (14.2 MB/s)
+         Packets Received:	2570 (26/s)
+                Breakdown:	                DISK READS                LOGICAL WRITES
+                	580 KB (6.7 MB/s)	0 bytes (0 bytes/s)	activateSettings
+                	197.4 MB (2 MB/s)	202 KB (2 KB/s)	com.apple.Safari
+                	125.5 MB (1.3 MB/s)	6.2 MB (65 KB/s)	com.apple.system
+                	273 KB (1.1 MB/s)	483 bytes (2 KB/s)	com.apple.systemstats.daily
+                	90.6 MB (951 KB/s)	2.9 MB (31 KB/s)	com.apple.mail
+
+                     Time:	2016-12-02 05:40:04 to 2016-12-02 05:50:04 (00:09:59)
+               Disk Reads:	57277 (95/s)
+             Packets Sent:	9039 (15/s)
+              Disk Writes:	23699 (40/s)
+           Bytes Received:	53.2 MB (91 KB/s)
+               Bytes Read:	5.41 GB (9.2 MB/s)
+               Bytes Sent:	750 KB (1 KB/s)
+            Bytes Written:	5.52 GB (9.4 MB/s)
+         Packets Received:	39230 (65/s)
+                Breakdown:	                DISK READS                LOGICAL WRITES
+                	584 KB (997 bytes/s)	215.1 MB (367 KB/s)	com.apple.nsurlsessiond
+                	18.1 MB (31 KB/s)	101.6 MB (173 KB/s)	com.apple.iTunes
+                	98.9 MB (169 KB/s)	7.1 MB (12 KB/s)	com.apple.quicklook
+                	69.6 MB (119 KB/s)	1.2 MB (2 KB/s)	com.apple.finder
+                	33.2 MB (57 KB/s)	12.3 MB (21 KB/s)	com.apple.Spotlight
+
+
+Airport Summary
+===============
+           Total Duration:	  106054.2 s
+
+           awdl0_rx_bytes:	0 bytes (0 bytes/s)
+        awdl0_bk_tx_bytes:	0 bytes (0 bytes/s)
+        awdl0_be_tx_bytes:	0 bytes (0 bytes/s)
+        awdl0_vo_tx_bytes:	0 bytes (0 bytes/s)
+           awdl0_tx_bytes:	0 bytes (0 bytes/s)
+        awdl0_vi_tx_bytes:	0 bytes (0 bytes/s)
+              en_rx_bytes:	2.74 GB (27 KB/s)
+           en_bk_tx_bytes:	63.5 MB (628 bytes/s)
+           en_be_tx_bytes:	234.1 MB (2 KB/s)
+           en_vo_tx_bytes:	4.5 MB (44 bytes/s)
+              en_tx_bytes:	313.8 MB (3 KB/s)
+           en_vi_tx_bytes:	11.7 MB (115 bytes/s)
+
+ phy_scan_user_scan_count:	    6666.4    (       0.1Hz)
+        awdl_radio_rx_dur:	       0.0 s  (       0.0%)
+   phy_scan_user_scan_dur:	    2348.3 s  (       2.2%)
+              awdl_aw_dur:	       0.0 s  (       0.0%)
+phy_activity_radio_tx_dur:	     298.1 s  (       0.3%)
+           awdl_pscan_dur:	       0.0 s  (       0.0%)
+phy_activity_radio_rx_dur:	    6613.4 s  (       6.2%)
+        awdl_radio_tx_dur:	       0.0 s  (       0.0%)
+
+
+
+Bluetooth Summary
+=================
+           Total Duration:	  106054.2 s
+
+BT Idle Timer Expired Count:	       0.0 (0.000/s)
+BTLE Advertisement Reports Total Count:	       0.0 (0.000/s)
+       BT Power Time Idle:	       0.0 s (0.0%)
+        BT Power Time Off:	  106005.2 s (100.0%)
+         BT Power Time On:	       1.0 s (0.0%)
+      BT Power Time Sleep:	       0.0 s (0.0%)
+
+
+
+
+Top Fan Activity
+================
+                     Time:	2016-11-30 21:20:11 to 2016-11-30 22:41:53 (01:21:42)
+            Total samples:	82
+             High samples:	0
+        Very high samples:	82
+           Avg. Frequency:	1.694 GHz
+           Package Power::	Pkg: 1.60W, CPU 0.88W, GPU: 0.09W
+       Pkg Interrupt Rate:	Total: 4253Hz   ARPT: 28Hz   HDEF: 1Hz   IGPU: 1911Hz   IPI: 1791Hz   MacBookAir7,2: 26Hz   SMC: 2Hz   TMR: 495Hz
+          Pkg C-State Res:	Total: 73.7%   C2: 8%   C3: 5%   C6: 3%   C7: 58%   C8: 0%   C9: 0%   C10: 0%
+        Cores C-State Res:	   C3: 0%   C6: 0%   C7: 80%
+          GPU C-State Res:	   RC1: 2%   RC6: 166%
+            XCPM Tier Res:	   TT5: 0%   background: 2%   idle: 91%   normal: 7%
+         Process Intrpts.:	9838373
+                 CPU Time:	00:29:04 (35.6%)
+                  	00:09:07 (11.2%)  	691019	com.oracle.java.JavaAppletPlugin
+                  	00:03:53 (4.8%)  	4604	com.apple.nsurlsessiond
+                  	00:03:25 (4.2%)  	8963198	com.apple.system
+                  	00:03:20 (4.1%)  	45834	com.apple.WindowServer
+                  	00:02:27 (3.0%)  	12311	com.apple.mail
+
+                     Time:	2016-11-30 19:39:11 to 2016-11-30 20:08:11 (00:28:59)
+            Total samples:	29
+             High samples:	3
+        Very high samples:	26
+           Avg. Frequency:	1.673 GHz
+           Package Power::	Pkg: 2.02W, CPU 1.17W, GPU: 0.05W
+       Pkg Interrupt Rate:	Total: 3695Hz   ARPT: 27Hz   HDEF: 1Hz   IGPU: 774Hz   IPI: 2165Hz   MacBookAir7,2: 48Hz   SMC: 2Hz   TMR: 678Hz
+          Pkg C-State Res:	Total: 61.8%   C2: 8%   C3: 4%   C6: 2%   C7: 48%   C8: 0%   C9: 0%   C10: 0%
+        Cores C-State Res:	   C3: 1%   C6: 0%   C7: 71%
+          GPU C-State Res:	   RC1: 1%   RC6: 95%
+            XCPM Tier Res:	   TT5: 0%   background: 3%   idle: 87%   normal: 11%
+         Process Intrpts.:	2129202
+                 CPU Time:	00:15:16 (52.7%)
+                  	00:05:02 (17.4%)  	110435	com.apple.Safari
+                  	00:02:22 (8.2%)  	71765	com.apple.WindowServer
+                  	00:01:42 (5.9%)  	1242	com.apple.nsurlsessiond
+                  	00:01:30 (5.2%)  	1803448	com.apple.system
+                  	00:01:23 (4.8%)  	92648	com.oracle.java.JavaAppletPlugin
+
+                     Time:	2016-12-02 08:23:04 to 2016-12-02 08:35:13 (00:12:09)
+            Total samples:	12
+             High samples:	0
+        Very high samples:	12
+           Avg. Frequency:	1.879 GHz
+           Package Power::	Pkg: 1.28W, CPU 0.65W, GPU: 0.01W
+       Pkg Interrupt Rate:	Total: 2391Hz   ARPT: 13Hz   IGPU: 350Hz   IPI: 990Hz   MacBookAir7,2: 16Hz   SMC: 1Hz   TMR: 1020Hz
+          Pkg C-State Res:	Total: 76.9%   C2: 15%   C3: 5%   C6: 3%   C7: 54%   C8: 0%   C9: 0%   C10: 0%
+        Cores C-State Res:	   C3: 0%   C6: 0%   C7: 84%
+          GPU C-State Res:	   RC1: 0%   RC6: 99%
+            XCPM Tier Res:	   TT5: 0%   background: 2%   idle: 93%   normal: 5%
+         Process Intrpts.:	798227
+                 CPU Time:	00:03:29 (28.7%)
+                  	00:00:37 (5.2%)  	666	com.apple.nsurlsessiond
+                  	00:00:28 (4.0%)  	71674	org.eclipse.platform.ide
+                  	00:00:23 (3.2%)  	83045	com.oracle.java.JavaAppletPlugin
+                  	00:00:21 (2.9%)  	3321	com.apple.Safari
+                  	00:00:18 (2.6%)  	63143	com.apple.audio.coreaudiod
+
+
+Apps & Daemons (grouped by coalition)
+=====================================
+Ranked by CPU & Energy Impact:
+01:15:28	4.3 %		1120967.09		com.apple.system
+01:28:08	5.0 %		782230.65		org.virtualbox.app.VirtualBox
+01:39:41	5.6 %		722113.54		com.oracle.java.JavaAppletPlugin
+01:14:56	4.2 %		451557.50		com.apple.nsurlsessiond
+01:04:31	3.7 %		403769.84		com.apple.WindowServer
+01:02:19	3.5 %		374373.64		com.apple.DuetHeuristic-BM
+00:58:42	3.3 %		363509.69		com.apple.Safari
+00:45:09	2.6 %		306620.39		org.eclipse.platform.ide
+00:28:24	1.6 %		172145.64		com.apple.mail
+00:19:08	1.1 %		116511.92		com.apple.hidd
+
+Ranked by Interrupts / Idle Wakeups:
+150126659 (1415.6/sec)	33342113 wkups (314.4/sec)	com.apple.system
+15748481 (148.5/sec)	12657908 wkups (119.4/sec)	org.virtualbox.app.VirtualBox
+10709312 (101.0/sec)	6194390 wkups (58.4/sec)	com.oracle.java.JavaAppletPlugin
+2871490 (27.1/sec)	1748687 wkups (16.5/sec)	org.eclipse.platform.ide
+2044256 (19.3/sec)	1244424 wkups (11.7/sec)	com.apple.audio.coreaudiod
+1532367 (14.4/sec)	 823707 wkups (7.8/sec)	com.apple.WindowServer
+ 928428 (8.8/sec)	 474188 wkups (4.5/sec)	com.apple.Safari
+ 584879 (5.5/sec)	 321972 wkups (3.0/sec)	com.apple.PerformanceAnalysis.animationperfd
+ 269024 (2.5/sec)	 142768 wkups (1.3/sec)	com.apple.Spotlight
+ 205898 (1.9/sec)	 152028 wkups (1.4/sec)	com.apple.Terminal
+
+Ranked by Process Launches (incl. XPC svcs. & fork()):
+   4140	com.apple.Terminal
+   3656	com.apple.PerformanceAnalysis.animationperfd
+    892	com.apple.Spotlight
+    744	com.apple.Safari
+    539	com.apple.periodic-daily
+    506	com.apple.quicklook
+    253	com.apple.diskarbitrationd
+    210	com.apple.bsd.dirhelper
+    170	com.apple.iCloudHelper
+    153	com.apple.system
+
+Ranked by GPU:
+00:00:00	0.00 %		com.apple.webinspectord
+00:00:00	0.00 %		com.apple.UserEventAgent-Aqua
+00:00:00	0.00 %		com.apple.wirelessproxd
+00:00:00	0.00 %		com.huawei.mbbservice.plist
+00:00:00	0.00 %		com.apple.ctkd
+00:00:00	0.00 %		com.apple.warmd
+00:00:00	0.00 %		com.google.android.mtpagent
+00:00:00	0.00 %		com.apple.usbd
+00:00:00	0.00 %		com.paragon-software.fsnotify.daemon.NTFS
+00:00:00	0.00 %		com.apple.CrashReporterSupportHelper
+
+
+Memory Summary
+==============
+                 Swap Dev:	SSD
+                    Total:	8 GB
+                     Free:	995.5 MB
+                    Wired:	1.58 GB
+               Compressor:	495.1 MB
+               Compressed:	1.61 GB
+                Purgeable:	255.2 MB
+                 Internal:	3.43 GB
+                 External:	1.53 GB
+
+          IOAccelResident:	406 MB
+             IOAccelWired:	227.2 MB
+             IOAccelDirty:	406 MB
+            IOAccelCached:	0 bytes
+         IOAccelPurgeable:	137 MB
+
+                   Faults:	 154795697
+                   Purges:	    797027 (30 KB/s)
+               Zero-fills:	  70318713 (2.6 MB/s)
+            Reactivations:	   1141971 (43 KB/s)
+                 Page-ins:	   5062195 (191 KB/s)
+                Page-outs:	     15000 (579 bytes/s)
+           Decompressions:	   4201074 (158 KB/s)
+             Compressions:	   5976919 (225 KB/s)
+                 Swap-ins:	   2729687 (103 KB/s)
+                Swap-outs:	   2869208 (108 KB/s)
+                Breakdown:	          MEM          CMPRS            Purge            Wire
+                	2.13 GB	15.2 MB	7.7 MB	8 KB	org.virtualbox.app.VirtualBox
+                	1.92 GB	758.4 MB	36.7 MB	278 bytes	com.apple.Safari
+                	1.09 GB	184.7 MB	65 KB	0 bytes	org.eclipse.platform.ide
+                	384.5 MB	227 KB	3.6 MB	596 bytes	com.oracle.java.JavaAppletPlugin
+                	232 MB	79.6 MB	21.6 MB	0 bytes	com.apple.mail
+
+Ranked Memory Activity
+======================
+                     Time:	2016-12-01 22:49:25 to 2016-12-01 22:59:25 (00:09:59)
+                     Free:	127.4 MB
+                    Wired:	2.45 GB
+               Compressor:	1.26 GB
+               Compressed:	3.79 GB
+                Purgeable:	222.1 MB
+                 Internal:	3.33 GB
+                 External:	852.9 MB
+
+          IOAccelResident:	500.4 MB
+             IOAccelWired:	313.3 MB
+             IOAccelDirty:	500.3 MB
+            IOAccelCached:	0 bytes
+         IOAccelPurgeable:	130.1 MB
+
+                   Faults:	   3242293
+                   Purges:	     85787 (572 KB/s)
+               Zero-fills:	   1413139 (9.2 MB/s)
+            Reactivations:	    214853 (1.4 MB/s)
+                 Page-ins:	     47091 (314 KB/s)
+                Page-outs:	      3977 (27 KB/s)
+           Decompressions:	    118026 (787 KB/s)
+             Compressions:	    361196 (2.4 MB/s)
+                 Swap-ins:	     13882 (93 KB/s)
+                Swap-outs:	         0 (0 bytes/s)
+                Breakdown:	          MEM          CMPRS            Purge            Wire
+                	2.83 GB	1.66 GB	31.2 MB	0 bytes	com.apple.Safari
+                	1.89 GB	65.6 MB	4.1 MB	40 KB	org.virtualbox.app.VirtualBox
+                	945.6 MB	184.4 MB	16 KB	0 bytes	org.eclipse.platform.ide
+                	362.8 MB	125.4 MB	57.2 MB	0 bytes	com.apple.mail
+                	316.5 MB	0 bytes	6.3 MB	0 bytes	com.oracle.java.JavaAppletPlugin
+
+                     Time:	2016-12-01 07:06:49 to 2016-12-01 07:16:49 (00:09:59)
+                     Free:	469 MB
+                    Wired:	1.4 GB
+               Compressor:	1.11 GB
+               Compressed:	3.05 GB
+                Purgeable:	532.4 MB
+                 Internal:	4.15 GB
+                 External:	905 MB
+
+          IOAccelResident:	686.2 MB
+             IOAccelWired:	320.7 MB
+             IOAccelDirty:	686.2 MB
+            IOAccelCached:	0 bytes
+         IOAccelPurgeable:	350 MB
+
+                   Faults:	   1474489
+                   Purges:	        79 (539 bytes/s)
+               Zero-fills:	    766495 (5 MB/s)
+            Reactivations:	    162340 (1.1 MB/s)
+                 Page-ins:	     15104 (101 KB/s)
+                Page-outs:	       964 (6 KB/s)
+           Decompressions:	     27209 (181 KB/s)
+             Compressions:	    163244 (1.1 MB/s)
+                 Swap-ins:	      6885 (46 KB/s)
+                Swap-outs:	         0 (0 bytes/s)
+                Breakdown:	          MEM          CMPRS            Purge            Wire
+                	2.52 GB	1.33 GB	149.9 MB	0 bytes	com.apple.Safari
+                	1.16 GB	17.1 MB	94 KB	0 bytes	org.eclipse.platform.ide
+                	327.5 MB	127.2 MB	15.4 MB	0 bytes	com.apple.mail
+                	251 MB	19.4 MB	22 KB	0 bytes	com.apple.finder
+                	236.1 MB	131.4 MB	14.7 MB	0 bytes	com.apple.Spotlight
+
+                     Time:	2016-12-01 05:56:59 to 2016-12-01 06:06:49 (00:09:50)
+                     Free:	27.8 MB
+                    Wired:	3.4 GB
+               Compressor:	1.01 GB
+               Compressed:	3.26 GB
+                Purgeable:	214.2 MB
+                 Internal:	2.49 GB
+                 External:	1.07 GB
+
+          IOAccelResident:	323.9 MB
+             IOAccelWired:	197.2 MB
+             IOAccelDirty:	323.9 MB
+            IOAccelCached:	0 bytes
+         IOAccelPurgeable:	96.6 MB
+
+                   Faults:	   1393149
+                   Purges:	        50 (347 bytes/s)
+               Zero-fills:	    645476 (4.3 MB/s)
+            Reactivations:	     66170 (449 KB/s)
+                 Page-ins:	     68993 (468 KB/s)
+                Page-outs:	       571 (4 KB/s)
+           Decompressions:	     45847 (311 KB/s)
+             Compressions:	    113282 (768 KB/s)
+                 Swap-ins:	      7156 (49 KB/s)
+                Swap-outs:	         0 (0 bytes/s)
+                Breakdown:	          MEM          CMPRS            Purge            Wire
+                	2.59 GB	1.76 GB	40.1 MB	0 bytes	com.apple.Safari
+                	2.3 GB	28 MB	7.6 MB	24 KB	org.virtualbox.app.VirtualBox
+                	324.4 MB	179.6 MB	2.2 MB	0 bytes	com.apple.mail
+                	271.5 MB	116.1 MB	11.4 MB	0 bytes	com.apple.Spotlight
+                	222.6 MB	60.7 MB	48.3 MB	0 bytes	com.apple.WindowServer
+
+
+
+Memory Pressure Summary
+=======================
+     Normal Sample Counts:	1766
+
+
+Ranked Battery Usage
+====================
+                     Time:	2016-11-30 01:09:16 to 2016-11-30 01:11:39 (00:02:23)
+                    Power:	-12377 mW (-22.2 %/hr)
+           Avg. Frequency:	2.345 GHz
+           Package Power::	Pkg: 0.90W, CPU 0.50W, GPU: 0.02W
+       Pkg Interrupt Rate:	Total: 2949Hz   ARPT: 41Hz   HDEF: 8Hz   IGPU: 328Hz   IPI: 1904Hz   MacBookAir7,2: 12Hz   NHI0: 3Hz   SMC: 3Hz   TMR: 646Hz   XHC1: 5Hz
+          Pkg C-State Res:	Total: 67.8%   C2: 7%   C3: 0%   C6: 0%   C7: 0%   C8: 0%   C9: 0%   C10: 0%
+        Cores C-State Res:	   C3: 1%   C6: 0%   C7: 71%
+          GPU C-State Res:	   RC1: 0%   RC6: 82%
+            XCPM Tier Res:	   TT5: 0%   background: 2%   idle: 91%   normal: 7%
+        Display Backlight:	7.0%
+       Keyboard Backlight:	42.7%
+         Process Intrpts.:	137464
+                 CPU Time:	00:01:24 (59.3%)
+                  	00:00:17 (12.6%)  	121137	com.apple.system
+                  	00:00:05 (3.8%)  	204	com.apple.CalendarAgent
+                  	00:00:05 (3.8%)  	56	com.apple.DuetHeuristic-BM
+                  	00:00:05 (3.8%)  	308	com.apple.mail
+                  	00:00:05 (3.7%)  	2418	com.apple.Safari
+
+                     Time:	2016-12-01 22:54:04 to 2016-12-01 23:03:35 (00:09:30)
+                    Power:	-10302 mW (-18.8 %/hr)
+           Avg. Frequency:	1.903 GHz
+           Package Power::	Pkg: 4.04W, CPU 2.77W, GPU: 0.06W
+       Pkg Interrupt Rate:	Total: 4586Hz   ARPT: 94Hz   HDEF: 2Hz   IGPU: 560Hz   IPI: 2763Hz   MacBookAir7,2: 38Hz   NHI0: 2Hz   SMC: 2Hz   TMR: 1123Hz   XHC1: 1Hz
+          Pkg C-State Res:	Total: 46.0%   C2: 15%   C3: 3%   C6: 2%   C7: 24%   C8: 0%   C9: 0%   C10: 1%
+        Cores C-State Res:	   C3: 1%   C6: 0%   C7: 62%
+          GPU C-State Res:	   RC1: 0%   RC6: 53%
+            XCPM Tier Res:	   TT5: 0%   background: 1%   idle: 80%   normal: 18%   rt_short: 0%
+        Display Backlight:	23.3%
+       Keyboard Backlight:	36.4%
+         Process Intrpts.:	1091510
+                 CPU Time:	00:07:52 (82.8%)
+                  	00:03:02 (32.0%)  	325221	org.virtualbox.app.VirtualBox
+                  	00:00:54 (9.6%)  	30422	com.apple.Safari
+                  	00:00:52 (9.3%)  	598245	com.apple.system
+                  	00:00:48 (8.5%)  	4399	com.apple.mail
+                  	00:00:40 (7.1%)  	31623	com.apple.WindowServer
+
+                     Time:	2016-12-01 20:01:28 to 2016-12-01 20:03:53 (00:02:24)
+                    Power:	-9583 mW (-16.9 %/hr)
+           Avg. Frequency:	1.782 GHz
+           Package Power::	Pkg: 1.70W, CPU 0.97W, GPU: 0.03W
+       Pkg Interrupt Rate:	Total: 3612Hz   ARPT: 30Hz   HDEF: 3Hz   IGPU: 485Hz   IPI: 2163Hz   MacBookAir7,2: 37Hz   NHI0: 1Hz   SMC: 2Hz   TMR: 890Hz   XHC1: 1Hz
+          Pkg C-State Res:	Total: 67.9%   C2: 8%   C3: 5%   C6: 2%   C7: 49%   C8: 0%   C9: 0%   C10: 0%
+        Cores C-State Res:	   C3: 1%   C6: 0%   C7: 76%
+          GPU C-State Res:	   RC1: 1%   RC6: 42%
+            XCPM Tier Res:	   TT5: 0%   background: 2%   idle: 89%   normal: 9%
+        Display Backlight:	18.9%
+       Keyboard Backlight:	32.4%
+         Process Intrpts.:	178341
+                 CPU Time:	00:01:12 (49.7%)
+                  	00:00:14 (10.1%)  	3086	com.apple.Safari
+                  	00:00:14 (10.0%)  	13766	org.eclipse.platform.ide
+                  	00:00:09 (6.6%)  	3877	com.apple.WindowServer
+                  	00:00:07 (4.9%)  	142302	com.apple.system
+                  	00:00:04 (3.3%)  	49	com.apple.DuetHeuristic-BM
+
+
+Ranked CPU Activity
+===================
+                     Time:	2016-12-01 05:56:59 to 2016-12-01 06:06:49 (00:09:50)
+           Avg. Frequency:	2.438 GHz
+           Package Power::	Pkg: 6.66W, CPU 5.02W, GPU: 0.14W
+       Pkg Interrupt Rate:	Total: 8327Hz   ARPT: 425Hz   IGPU: 1881Hz   IPI: 4290Hz   MacBookAir7,2: 42Hz   SMC: 2Hz   TMR: 1688Hz
+          Pkg C-State Res:	Total: 22.6%   C2: 13%   C3: 1%   C6: 1%   C7: 8%   C8: 0%   C9: 0%   C10: 0%
+        Cores C-State Res:	   C3: 0%   C6: 0%   C7: 45%
+          GPU C-State Res:	   RC1: 1%   RC6: 94%
+            XCPM Tier Res:	   TT5: 0%   background: 2%   idle: 70%   normal: 27%   rt_short: 0%
+         Process Intrpts.:	2426284
+                 CPU Time:	00:11:31 (117.1%)
+                  	00:07:42 (78.5%)  	424501	org.virtualbox.app.VirtualBox
+                  	00:00:51 (8.8%)  	1854624	com.apple.system
+                  	00:00:30 (5.2%)  	18147	com.apple.WindowServer
+                  	00:00:30 (5.1%)  	7121	com.apple.Safari
+                  	00:00:28 (4.9%)  	2584	com.apple.nsurlsessiond
+
+                     Time:	2016-12-01 06:06:49 to 2016-12-01 06:26:49 (00:19:59)
+           Avg. Frequency:	2.482 GHz
+           Package Power::	Pkg: 6.33W, CPU 4.77W, GPU: 0.07W
+       Pkg Interrupt Rate:	Total: 6749Hz   ARPT: 219Hz   IGPU: 983Hz   IPI: 3731Hz   MacBookAir7,2: 40Hz   SMC: 2Hz   TMR: 1773Hz
+          Pkg C-State Res:	Total: 23.6%   C2: 13%   C3: 1%   C6: 1%   C7: 8%   C8: 0%   C9: 0%   C10: 0%
+        Cores C-State Res:	   C3: 0%   C6: 0%   C7: 46%
+          GPU C-State Res:	   RC1: 1%   RC6: 96%
+            XCPM Tier Res:	   TT5: 0%   background: 2%   idle: 70%   normal: 28%   rt_short: 0%
+         Process Intrpts.:	3535800
+                 CPU Time:	00:23:26 (117.2%)
+                  	00:13:08 (65.7%)  	899210	org.virtualbox.app.VirtualBox
+                  	00:03:34 (17.8%)  	64554	org.eclipse.platform.ide
+                  	00:01:23 (6.9%)  	2188117	com.apple.system
+                  	00:01:01 (5.1%)  	36728	com.apple.WindowServer
+                  	00:01:00 (5.0%)  	20593	com.apple.Safari
+
+                     Time:	2016-12-01 05:29:35 to 2016-12-01 05:36:50 (00:07:15)
+           Avg. Frequency:	2.390 GHz
+           Package Power::	Pkg: 6.25W, CPU 4.59W, GPU: 0.04W
+       Pkg Interrupt Rate:	Total: 6942Hz   ARPT: 247Hz   HDEF: 2Hz   IGPU: 479Hz   IPI: 4907Hz   MacBookAir7,2: 52Hz   NHI0: 2Hz   SMC: 1Hz   TMR: 1248Hz   XHC1: 2Hz
+          Pkg C-State Res:	Total: 24.0%   C2: 10%   C3: 5%   C6: 2%   C7: 7%   C8: 0%   C9: 0%   C10: 0%
+        Cores C-State Res:	   C3: 1%   C6: 0%   C7: 40%
+          GPU C-State Res:	   RC1: 0%   RC6: 79%
+            XCPM Tier Res:	   TT5: 1%   background: 16%   idle: 63%   normal: 20%   rt_short: 0%
+         Process Intrpts.:	914352
+                 CPU Time:	00:09:52 (136.3%)
+                  	00:02:48 (38.7%)  	267284	org.virtualbox.app.VirtualBox
+                  	00:02:12 (30.4%)  	2805	com.apple.installd
+                  	00:00:57 (13.2%)  	587430	com.apple.system
+                  	00:00:29 (6.8%)  	6415	com.apple.Safari
+                  	00:00:22 (5.3%)  	563	com.apple.storedownloadd
+
+
+Devices Dashboard
+=================
+        Display Backlight:	16.9%
+       Keyboard Backlight:	28.6%
+
+          Builtin Devices:	
+                Bluetooth:	0.0%
+                    Wi-Fi:	99.9%
+
+         External Devices:	
+                      USB:	3.9%
