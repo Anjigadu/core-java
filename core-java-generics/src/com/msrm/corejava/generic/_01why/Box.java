@@ -1,4 +1,4 @@
-package com.msrm.corejava.generics.why;
+package com.msrm.corejava.generic._01why;
 
 /**
  * Below class can store any type of objects

@@ -1,4 +1,4 @@
-package com.msrm.corejava.generics.why;
+package com.msrm.corejava.generic._01why;
 
 public class Bag<T> {
 

@@ -1,4 +1,4 @@
-package com.msrm.corejava.generics.usage;
+package com.msrm.corejava.generic._03types;
 
 /**
  * Generic Methods and Bounded Type Parameters

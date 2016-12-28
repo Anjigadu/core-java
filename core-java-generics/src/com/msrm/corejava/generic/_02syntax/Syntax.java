@@ -1,8 +1,39 @@
-package com.msrm.corejava.generics.syntax;
+package com.msrm.corejava.generic._02syntax;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 
+/**
+ * 
+ * An "In" Variable - An "in" variable serves up data to the code. Imagine a
+ * copy method with two arguments: copy(src, dest). The src argument provides
+ * the data to be copied, so it is the "in" parameter.
+ * 
+ * An "Out" Variable - An "out" variable holds data for use elsewhere. In the
+ * copy example, copy(src, dest), the dest argument accepts data, so it is the
+ * "out" parameter.
+ * 
+ * Wildcard Guidelines:
+ * 
+ * - An "in" variable is defined with an upper bounded wildcard, using the
+ * extends keyword.
+ * 
+ * - An "out" variable is defined with a lower bounded wildcard, using the super
+ * keyword.
+ * 
+ * - In the case where the "in" variable can be accessed using methods defined
+ * in the Object class, use an unbounded wildcard.
+ * 
+ * - In the case where the code needs to access the variable as both an "in" and
+ * an "out" variable, do not use a wildcard.
+ * 
+ * - Not advisable to have return type as wildcard.
+ * 
+ * @author srirammuthaiah
+ *
+ * @param <T>
+ */
 // Generic on Class level
 public class Syntax<T> {
 
@@ -61,9 +92,9 @@ public class Syntax<T> {
 		obj.mapProcessing("three", 3);
 	}
 	// ---------------------
-	
+
 	// ---------------------
-	// ------- Upper bound types
+	// ------- Upper bounded types
 	// ------- Single bound
 	// N is a type of Number or its child type
 	public <N extends Number> void concat(N n1, N n2) {
@@ -71,32 +102,51 @@ public class Syntax<T> {
 		System.out.println(result);
 	}
 
-	// ------- Upper bound types
+	// ------- Upper bounded types
 	// ------- Single bound
 	// interface also can referred
 	public <J extends Runnable> void doJob(J j) {
 	}
 	// ---------------------
-	
+
 	// ---------------------
 	// ------- Upper bound types
 	// ------- Multi bound
 	class A {
+		void can() {
+		}
 	}
 
 	interface B {
+		void may();
 	}
 
 	interface C {
+		void shall();
 	}
 
 	// Here bound first type should be a class
 	// rest should be interface
 	class D<S extends A & B & C> {
+		S s;
+
+		void doIt() {
+			s.can();
+			s.may();
+			s.shall();
+		}
 	}
 	// ---------------------
-	
-	
+
+	// ---------------------
+	// Lower bounded types
+	List<Integer> ints = new ArrayList<>();
+	List<? super Integer> result = ints;
+
+	public void acceptData(List<? super Integer> list) {
+	}
+	// ---------------------
+
 	// ---------------------
 	// Type inference
 	public static <T> T pick(T t1, T t2) {
