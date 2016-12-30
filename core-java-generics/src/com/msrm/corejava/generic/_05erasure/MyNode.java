@@ -24,6 +24,7 @@ public class MyNode extends Node<Integer> {
 		super.setData(i);
 	}
 
+	@SuppressWarnings({ "unchecked", "rawtypes", "unused" })
 	public static void main(String[] args) {
 		// Here is what happens as the code is executed:
 
@@ -37,14 +38,14 @@ public class MyNode extends Node<Integer> {
 		// - The data field of that same object, referenced via mn, can be
 		// accessed and is expected to be an integer (since mn is a MyNode which
 		// is a Node<Integer>.
-		
+
 		// - Trying to assign a String to an Integer causes a ClassCastException
 		// from a cast inserted at the assignment by a Java compiler.
 
 		MyNode mn = new MyNode(5);
 		Node n = mn;
 		n.setData("sriram");
-		
+
 		Integer data = mn.t;
 		System.out.println(n.t);
 		System.out.println(mn.t);

@@ -29,6 +29,7 @@ public class Question11 {
 		}
 	}
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		Node<String> node = new Node<>();
 		Comparable<String> comp = node;
