@@ -44,6 +44,7 @@ public class MyNode extends Node<Integer> {
 		MyNode mn = new MyNode(5);
 		Node n = mn;
 		n.setData("sriram");
+		
 		Integer data = mn.t;
 		System.out.println(n.t);
 		System.out.println(mn.t);
